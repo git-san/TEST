@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Variables(변수)</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+
+        // 호이스팅 -  변수 선언이 어디에 있든 상관없이 다른 코드보다 먼저 실행되는 특징
+
+        //console.log(a); * 오류
+        //console.log(b); * 오류
+        console.log(c);
+
+
+        const a = 3; //선언과 초기화를 동시에 진행
+        let b = 4; //선언 단계와 초기화 단계가 분리되어 진행, 변수 중복 선언이 불가
+        var c = 5;
+        //a = 2; //const 재할당 불가능
+        b = 3;
+        c = 6;
+    </script>
+</body>
+
+</html>

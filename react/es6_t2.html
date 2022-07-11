@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>화살표 함수</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <button type="button" id="btn">버튼</button>
+    <script type="text/javascript">
+        /* 비교 ▼ ------------------------------ */
+        /* 기존 */
+        hello = function() {
+            return "Hello World!";
+        }
+
+        /* 화살표 함수 사용 */
+        hello2 = () => "Hello World2!";
+
+        /* 매개 변수 존재시 */
+        hello3 = (val) => "Hello World3!" + val;
+        /* 매개 변수 1개시 */
+        hello4 = val => "Hello World4!" + val;
+
+        /* 비교 ▲ ------------------------------ */
+
+
+        /* 비교 2 ▼ ------------------------------ */
+
+        class Header {
+            constructor() {
+                this.color = "Red";
+            }
+
+            /*
+            //Regular function:
+            changeColor = function() {
+                document.getElementById("demo").innerHTML += this;
+            }
+            */
+
+            //Arrow function:
+            changeColor = () => {
+                document.getElementById("demo").innerHTML += this;
+            }
+        }
+
+        myheader = new Header();
+
+        //The window object calls the function:
+        window.addEventListener("load", myheader.changeColor);
+
+        //A button object calls the function:
+        document.getElementById("btn").addEventListener("click", myheader.changeColor);
+
+        /* 비교 2 ▲ ------------------------------ */
+    </script>
+</body>
+
+</html>

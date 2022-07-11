@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>React 배우기</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+
+    <div id="demo"></div>
+
+    <script type="text/babel">
+        const demo = (<React.Fragment>
+            <h1>React 배우기</h1>
+            <p>react 테스트</p>
+            </React.Fragment>
+        );
+
+        // 약식
+        const demo2 = (<>
+            <h1>React 배우기[약식]</h1>
+            <p>react 테스트2[약식]</p>
+            </>
+        );
+
+
+        ReactDOM.render(
+            demo,
+            document.getElementById('demo')
+        );
+
+    </script>
+
+</body>
+
+</html>

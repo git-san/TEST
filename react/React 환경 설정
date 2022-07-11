@@ -1,0 +1,5 @@
+>npm install -g create-react-app
+- myfirstreact라는 응용 프로그램을 만듦
+
+>npx create-react-app myfirstreact
+- create-react-app는 React 애플리케이션을 실행하는 데 필요한 모든 것을 설정

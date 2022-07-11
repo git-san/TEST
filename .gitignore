@@ -54,3 +54,31 @@ doc/*.txt
 # (즉, p.pdf 파일과 pp.pdf 파일 모두 무시됨)
 doc/**/*.pdf
 # ▲--------------------------------------------------------------------
+
+
+
+# myfirstreact 관련 ▼ ----------------------------------
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/react/myfirstreact/node_modules
+/react/myfirstreact/.pnp
+.pnp.js
+
+# testing
+/react/myfirstreact/coverage
+
+# production
+/react/myfirstreact/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+# myfirstreact 관련 ▲ ----------------------------------
